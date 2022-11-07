@@ -1,0 +1,418 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*
+    list-style-type: none;*/
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    /*outline: none;*/
+}
+*::selection {
+    color: yellow;
+    background: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /*font-family: 'Opens sans', sans-serif*/
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1)), url(pics/kingsize_background.jpg);
+    background-position: center;
+    background-size: cover;
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);*/
+    /*clip-path: polygon(100% 0, 100% 91%, 49% 100%, 0 89%, 0 0);*/
+    /*clip-path: polygon(100% 41%, 45% 100%, 0 0);*/
+}
+nav{
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+nav .logo{
+    font-size: 3rem;
+    /*cursor: pointer;*/
+}
+/*
+nav .logo span{
+    color: rgb(253, 228, 4);
+}
+*/
+nav .logo img {
+    width: 5rem;
+    height: auto;
+}
+nav .links{
+    padding-left: 0;
+}
+nav .links li{
+    display: inline-block;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+nav .links li a{
+    color: #fff;
+}
+nav .links li a:hover{
+    color: rgb(253, 228, 4);
+}
+
+header .content{
+    position: absolute;
+    margin-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+header .content h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: rgb(253, 228, 4);
+    cursor: context-menu;
+}
+
+header .fname__group{
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    flex-direction: column;
+    visibility: hidden;
+    display: flex;
+}
+header .fname__field{
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    /*
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: 0 ;
+    */
+}
+
+.fname__field::placeholder {
+    color: transparent;
+}
+
+.fname__field:placeholder-shown  ~ .fname__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 30px;
+}
+
+
+
+.fname__label {
+    position: absolute;
+    top: 0px;
+    display: block;
+
+    transition: 0.2s, background-color 0s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+
+.fname__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    /*
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    
+    */
+    /*
+    border-image: linear-gradient(to right, rgb(253, 171, 6), rgb(253, 228, 4));*/
+    border-image: linear-gradient(to right, rgb(253, 129, 6), rgb(253, 228, 4));
+    border-image-slice: 1;
+}
+
+
+.fname__field:focus ~ .fname__label {
+    position: absolute;
+    top: 0px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    /*color: #11998e;*/
+    /*background: -webkit-linear-gradient(#eee, #333);*/
+    background-color: rgb(253, 129, 6);
+    background-image: linear-gradient(45deg, rgb(253, 129, 6), rgb(253, 228, 4));
+    /*color: transparent;*/
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    /*color: rgb(253, 228, 4);*/
+    font-weight: 700;
+}
+
+.fname__field:required, .fname__label:invalid {
+    box-shadow: none;
+}
+
+/*
+header .signupbutton {
+    padding: 0 0 50 0;
+    text-align: center;
+}
+*/
+header .regbutton {
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /*width: 100%;*/
+    position: relative;
+    transition: 1s;
+}
+
+header .regbutton:after {
+    position: absolute;
+    transition: 0.3s;
+    content: '';
+    width: 0;
+    left: 0%;
+    bottom: 0;
+    height: 5%;
+    background: #f7f7f7;
+}
+header .regbutton:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.personal_trainer_part{
+    background: black;
+}
+h2{
+    color:white;
+    text-align: center;
+    font-size: 7vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.images .image {
+    max-width: 250px;
+    width: auto;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.images .image img{
+    margin: 15px 0 15px 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.images .image .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: top;
+    width: 101%;
+    height: 101%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.images .image:hover .info {
+    transform: translate(-50%, -50%) scale(1);
+}
+.images .image .info h3 {
+    font-size: 1rem;
+    color: rgb(253, 228, 4);
+    margin-bottom: 1.2rem;
+}
+.images .image .info p {
+    line-height: 2;
+    color: #fff;
+    font-size: 0.4rem;
+    padding: 0 1rem;
+    margin-bottom: 1.2rem;
+}
+.images .image .info button {
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+}
+.images .image .info .asd button:after {
+    position: absolute;
+    transition: 0.3s;
+    content: '';
+    width: 0;
+    left: 0%;
+    bottom: 0;
+    height: 5%;
+    background: #f7f7f7;
+}
+.images .image .info .asd button:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50vh;
+}
+
+.horizontal-scroll {
+    width: 92%;
+    height: 250px;
+    padding: 10px;
+    margin: 0px;
+    border: 0px;
+    background-color: black;
+    /*border: 1px solid #ddd;*/
+    /*box-shadow:inset 50px 0px 50px 0px #f8a100;*/
+    
+    /*box-shadow: inset 50px 0 50px -4px rgba(255, 255, 25, 0.8), inset -50px 0 50px -4px rgba(255, 255, 255, 0.8);*/
+    z-index: 1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+.horizontal-scroll::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100px;
+    background-image: linear-gradient(90deg, black, transparent);
+}
+.horizontal-scroll::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100px;
+    background-image: linear-gradient(270deg, black, transparent);
+}
+
+.btn-scroll {
+    border: 0px;
+    background: black;
+}
+.btn-scroll img {
+    height: 20px;
+    width: auto;
+    /*background: white;*/
+    /*
+    background-color: black;
+    color: #999;
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 50%;
+    */
+}
+
+.storys-container{
+    display: flex;
+    /*flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;*/
+    left: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.storys-container::-webkit-scrollbar{
+    width: 0;
+}
+.story-cicle {
+
+    width: 60px;
+    height: 60px;
+    margin: 15px 10px;
+    /*display: flex;*/
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    
+
+}
+.storys-container img{
+    flex-direction: row;
+    width: 240px;
+    height: 240px;
+    /*border: 2px solid black*/
+}
+
+.chart {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+
+.informations {
+    color: white;
+    display:flex;
+    padding: 5vh;
+    justify-content: center;
+    /*align-items: center;*/
+    background-color: rgb(38, 38, 38);
+    height: 50vh;
+}
+.informations .titles{
+    padding: 0 10vh;
+    
+}
+.informations .titles h3 {
+    padding: 1vh 5vh;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.informations .titles li {
+    list-style-type: none;
+    padding: 1vh;
+}

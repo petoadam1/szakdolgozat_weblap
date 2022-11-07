@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kingsize</title>
+    <link rel="stylesheet" type="text/css" href="public/assets/style.css">
+    <link rel="stylesheet" type="text/css" href="public/assets/scroll.css">
+    <link rel="icon" type="pics/png" href="public/assets/pics/biceps4.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bebas+Neue&family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    -->
+</head>
+<body>
+    <header>
+    <nav class="navigation">
+        <div class="logo"><img src="public/assets/pics/logo5.png" alt=""></div>
+        
+        <label for="" class="mobile-menu-button" onclick="listMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul id="links" class="links">
+            <li><a class="link1" href="index.html">Home</a></li>
+            <li><a class="link2" href="index.html">Trainers</a></li>
+            <li><a class="link3" href="index.html">Products</a></li>
+            <li><a class="link4" href="index.html">Statistics</a></li>
+            <li><a class="link5" href="index.html">Informations</a></li>
+        </ul>
+        
+        
+    </nav>
+
+    <div class="content">
+        <h1>Kingsize gym</h1>
+        <!--
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+            <label for="name" class="form__label">Name</label>
+        </div>-->
+
+        <div class="signupbutton"><button id="regbuttonid" class="regbutton" onclick="scrollWin()">Sign Up</button><br></div>
+        
+        <div id= "fname__group" class="fname__group field">
+            <input type="input" class="fname__field" placeholder="First Name" id="fname" name="fname"  required />
+            <label for="fname" class="fname__label">First Name</label>
+        </div>
+        <div id= "lname__group" class="fname__group field">
+            <input type="input" class="fname__field" placeholder="Last Name" id="lname" name="fname"  required />
+            <label for="lname" class="fname__label">Last Name</label>
+        </div> 
+
+        
+        <!--<input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+        
+        <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+        -->
+    
+    </div>
+    <script>
+        /*
+        function listMenu() {
+            document.getElementById("links").style.display = "block";
+        }*/
+        function scrollWin() {
+            /*
+          window.scrollTo(0, 500);*/
+          document.getElementById("regbuttonid").style.transform = "translateY(260%)";
+          document.getElementById("fname__group").style.transform = "translateY(-140%)";
+          document.getElementById("fname__group").style.visibility = "initial";
+          document.getElementById("lname__group").style.transform = "translateY(-140%)";
+          document.getElementById("lname__group").style.visibility = "initial";
+          /*document.getElementById("lname").style.transform = "translateY(-300%)";
+          document.getElementById("lname").style.display = "inline";*/
+          
+        }
+    </script>
+</header>
+
+
+
+
+<div class="personal_trainer_part">
+    <h2>- Trainers -</h2>
+    <div class="images">
+        <div class="image">
+            <img src="public/assets/pics/personal.jpeg" alt="">
+            <div class="info">
+                <h3>Pető Ádám</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit suscipit hic nam facilis cupiditate eligendi, odit deleniti molestias odio sed consequuntur nesciunt cumque necessitatibus quisquam consectetur incidunt eaque quo</p>
+                <div class="asd"><button class="btn">more</button>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="public/assets/pics/personal.jpeg" alt="">
+            <div class="info">
+                <h3>Pető Ádám</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit suscipit hic nam facilis cupiditate eligendi, odit deleniti molestias odio sed consequuntur nesciunt cumque necessitatibus quisquam consectetur incidunt eaque quo</p>
+                <div class="asd"><button class="btn">more</button></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="public/assets/pics/personal.jpeg" alt="">
+            <div class="info">
+                <h3>Pető Ádám</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit suscipit hic nam facilis cupiditate eligendi, odit deleniti molestias odio sed consequuntur nesciunt cumque necessitatibus quisquam consectetur incidunt eaque quo</p>
+                <div class="asd"><button class="btn">more</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<h2>- Products -</h2>
+<div class="wrapper">
+    <button class="btn-scroll" id="btn-scroll-left" onclick="scrollr()"><img src="pics/left_arrow_black.png" alt=""></button>
+    <div class="horizontal-scroll">
+        
+        <div class="storys-container">
+            
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_blue.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_black.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_green.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_blue.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_black.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_green.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_blue.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_black.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_green.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_blue.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_black.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_green.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_blue.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_black.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_green.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_blue.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_black.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_green.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_blue.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_black.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_green.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_blue.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_black.png" alt=""></div>
+            <div class="story-circle"><img src="public/assets/pics/products/dumbbell_green.png" alt=""></div>
+
+            <!--
+                <div class="story-circle"><img src="pics/products/coffee.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/coconut-2.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/compact-1000.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/protein_pancake.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/vegan_new_banana.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/whey_1000.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/whey_light.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/whey_magic.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/whey_quality.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/whey_quality2.jpg" alt=""></div>
+                <div class="story-circle"><img src="pics/products/whey_stevia.jpg" alt=""></div>
+                -->
+
+        </div>
+    
+    </div>
+    <button class="btn-scroll" id="btn-scroll-right" onclick="scrolll()"><img src="public/assets/pics/right_arrow_black.png" alt=""></button>
+
+    <script>
+        function scrolll() {
+            var left = document.querySelector(".storys-container");
+            left.scrollBy(350, 0);
+        }
+        function scrollr() {
+            var right = document.querySelector(".storys-container");
+            right.scrollBy(-350, 0);
+        }
+    </script>
+</div>
+
+<h2>- Statistics -</h2>
+<div class = "chart">
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="public/assets/asd.js"></script>
+    <div id="chart_div"></div>
+    <!--<script>
+
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawMultSeries);
+
+        function drawMultSeries() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('timeofday', 'Time of Day');
+        data.addColumn('number', 'Guests');
+        /*data.addColumn('number', 'Woman');*/
+       
+        data.addRows([
+            [{v: [7, 0, 0], f: '7 am'}, , /*3*/],
+            [{v: [8, 0, 0], f: '8 am'}, 2, /*2*/],
+            [{v: [9, 0, 0], f: '9 am'}, 3, /*.5*/],
+            [{v: [10, 0, 0], f:'10 am'}, 3, /*1*/],
+            [{v: [11, 0, 0], f: '11 am'}, 2, /*2.25*/],
+            [{v: [12, 0, 0], f: '12 pm'}, 1, /*1*/],
+            [{v: [13, 0, 0], f: '1 pm'}, .5, /*1.5*/],
+            [{v: [14, 0, 0], f: '2 pm'}, 4, /*2*/],
+            [{v: [15, 0, 0], f: '3 pm'}, 5, /*3*/],
+            [{v: [16, 0, 0], f: '4 pm'}, 9, /*5*/],
+            [{v: [17, 0, 0], f: '5 pm'}, 12, /*4*/],
+            [{v: [18, 0, 0], f: '6 pm'}, 11, /*2*/],
+            [{v: [19, 0, 0], f: '7 pm'}, 7, /*.5*/],
+            [{v: [20, 0, 0], f: '8 pm'}, 2, /*.25*/],
+        ]);
+
+        var options = {
+            //title: 'TÖMEG ELOSZLÁSI STATISZTIKA',
+            backgroundColor: 'black',
+            
+            legend: {
+                textStyle: {
+                    color: 'white'
+                }
+            },
+            hAxis: {
+                //title: 'Time of Day',
+                format: 'h a',
+                gridlines: {color: 'black'},
+                viewWindow: {
+                    min: [6, 30, 0],
+                    max: [20, 30, 0]
+                },
+                textStyle: {
+                    fontSize: 14,
+                    color: 'white',
+                    bold: true,
+                    italic: false
+                },
+                titleTextStyle: {
+                    fontSize: 18,
+                    color: 'white',
+                    bold: true,
+                    italic: false
+                }
+            },
+            
+            vAxis: {
+                title: 'Number of guests',
+                textStyle: {
+                    fontSize: 16,
+                    color: 'white',
+                    bold: true,
+                    italic: false
+                },
+                titleTextStyle: {
+                    color: 'white',
+                    bold: true,
+                    italic: false
+                },
+            }
+        };
+
+        var chart = new google.visualization.ColumnChart(
+            document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+        }
+    </script>-->
+
+
+
+    <!--
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+    <script src="public/assets/chart_js.js"></script>-->
+
+
+   
+    <div id="random" style="color: white">ASD</div>
+</div>
+<!--<h2>- Informations -</h2>-->
+<div class="informations">
+    <div class="titles">
+        <h3>Our contact details</h3>
+        <ol>
+            <li>+36307894561</li>
+            <li>+36704568521</li>
+            <li>+3646456123</li>
+            <li>petoadam@gmail.com</li>
+            <li>edzoterem@gmail.com</li>
+    
+    </div>
+    <div class="titles">
+        <h3>Opening hours</h3>
+        <ol>
+            <li>Monday: 10:00-21:00</li>
+            <li>Tuesday: 9:00-20:00</li>
+            <li>Wednesday: 10:00-21:00</li>
+            <li>Thursday: 9:00-20:00</li>
+            <li>Friday: 10:00-21:00</li>
+            <li>Saturday: 12:00-17:00</li>
+            <li>Sunday: 12:00-14:00</li>
+        </ol>
+    </div>
+    <div class="titles">
+        <h3>Pass prices</h3>
+        <ol>
+            <li>Napijegy: 1000 Ft</li>
+            <li>Láncbérlet: 8000 Ft</li>
+            <li>Negyedéves: 21000 Ft</li>
+            <li>Féléves: 40000 Ft</li>
+            <li>Éves: 73000 Ft</li>
+        </ol>
+    
+    
+    </div>
+</div>
+</body>
+</html>
